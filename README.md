@@ -13,6 +13,9 @@ In this Week I will Try to mess with my brain to understand **HTML/CSS** and **J
 
 
 
-<p align="Center">I will be going to be a Recording the Journey and Write it to my blog.I Do writing stuff too.</p>
+<p align="Center">I will be going to be a Recording the Journey and Write it to my blog.I Do writing stuff too.</p>'
+
+
+<p align="center">And this Starts Today.12 March 2023</p>
 
 ---
