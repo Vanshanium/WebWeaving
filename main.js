@@ -10,7 +10,7 @@ const my_canvas = document.querySelector(".webgl");
 // Mesh is just the combonation of geometry and material!
 
 const cube_geo = new THREE.BoxGeometry(1,1,2); // This only makes the geometry of the cube not the mesh
-const cube_material = new THREE.MeshBasicMaterial({color:0xff5733});
+const cube_material = new THREE.MeshBasicMaterial({color:0xff5763});
 
 const cube = new THREE.Mesh(cube_geo,cube_material);
 my_scene.add(cube)
@@ -32,7 +32,5 @@ Renderer.setSize(window.innerWidth,window.innerHeight);
 Renderer.render(my_scene,cam1);
 
 console.log("I am brainless!");
-
-
 
 
