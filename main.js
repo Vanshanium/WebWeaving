@@ -1,4 +1,7 @@
+import "./style.css"
+
 import * as THREE from "three"; // Three is the namespace.
+
 
 // This is the Scene same as blender!!!
 //Scene have Global lighting so dont cry for the lighting!
@@ -20,6 +23,7 @@ my_scene.add(cube)
 
 const cam1 = new THREE.PerspectiveCamera(80,window.innerWidth/window.innerHeight);
 cam1.position.z = 4;
+cam1.position.x = 4;
 
 my_scene.add(cam1)
 
@@ -29,8 +33,21 @@ const Renderer = new THREE.WebGL1Renderer({canvas: my_canvas});
 
 Renderer.setSize(window.innerWidth,window.innerHeight);
 
-Renderer.render(my_scene,cam1);
 
 console.log("I am brainless!");
 
 
+let init_value = 0;
+
+function animate() {
+
+    cube.rotation.y = Math.PI*init_value;
+    cube.rotation.x = Math.PI*init_value;
+    
+    init_value += 0.007
+    Renderer.render(my_scene,cam1);
+    window.requestAnimationFrame(animate)
+    
+};
+
+animate();
