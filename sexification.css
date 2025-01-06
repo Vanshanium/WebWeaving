@@ -1,0 +1,23 @@
+/* 
+CSS - Cascading Style Sheets 
+It is called Cascading as it uses the Cascade algorithm - https://en.wikipedia.org/wiki/Cascade_algorithm
+
+It have a Priority list like this 
+
+Inline styles (style attribute): Highest specificity.
+ID selectors: Higher than class or tag selectors.
+Class selectors: Higher than element (tag) selectors.
+Universal selectors (*): Lowest specificity.
+U can use the !Importnat declaration to overide other sytles.
+
+
+The CSS can be used in three ways, Inline, Internal and External (See the HTML file)
+
+*/
+
+
+
+
+
+
+/* Css Can be worked with some onther markup languages like xml we'll see after this */
