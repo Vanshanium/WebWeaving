@@ -13,11 +13,77 @@ U can use the !Importnat declaration to overide other sytles.
 
 The CSS can be used in three ways, Inline, Internal and External (See the HTML file)
 
+
+Syntaxxx
+
+selector {
+
+    property:value;
+
+}
+
 */
 
+/* You can Import a font using @import or <link> in the html the html one is faster! 
+here https://www.stevesouders.com/blog/2009/04/09/dont-use-import/ just because it can cause FOUC the flash of unstyled content*/
 
 
+/* Types of Selectors  */
 
+
+*{
+    color:black;
+
+    /* This is called the universal selector which selects everything */
+    /* You can see that the browser have prefered the red heading as it was inline */
+}
+
+h2{
+
+    font-family: 'Poppins', Courier, monospace;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 4px dotted #8D0B41 ;
+    border-radius: 50px;
+
+}
+
+p{
+    
+    color: #D6CFB4;
+    background-color: #8D0B41;
+    /* This is called the element selector, it selects all tag of the name */
+    
+}
+
+
+#gibrish{
+    
+    color: aqua;
+    /* This is the ID selector.... */
+}
+
+.dexter{
+    
+    color: violet;
+    background-color: slategrey;
+}
+
+[href^="https://"]{
+
+    color: green;
+    /* This is attribute selector with which u can select using the attribute of the html elements */
+
+}
+
+
+body{
+
+    background-image: url('./src/Backgroung.png');
+
+}
 
 
 /* Css Can be worked with some onther markup languages like xml we'll see after this */
