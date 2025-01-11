@@ -155,9 +155,13 @@ body{
     
     position: fixed;
     left: 0px;
+    top: 10vh;
     height: 70vh;
     width: 7vw;
-    border-radius: 20px;
+    /* Instead of using the 120x760px we can use the percentage of length and width of the display to make it dynamic
+    see this bible for units https://www.youtube.com/watch?v=fzZTvLmmTzM&t=659s */
+
+    border-radius: 0.4rem;
     background-color: #8D0B41;
     
     display: flex;
@@ -165,17 +169,35 @@ body{
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: nowrap;
-    gap:2px ;
+    /* gap: 0.1em; ; */
 
+}
+
+
+#Social_Button {
+    display: inline-block;
+    width: 1vw; /* Icon width */
+    height: 60px; /* Icon height */
+}
+
+#Social_Button {
+    display: inline-block;
+    width: 4vw; /* Icon width */
+    height: auto; /* Let the height scale proportionally */
+}
+
+#Social_Button img {
+    width: 100%; /* Make the image take up the full width of the parent */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image doesn't get cropped */
 }
 
 #Social_Button:hover{
 
     background-color: #175E4A;
     /* THis is called the Pseudo Class which have the css when certain condition is achived!  */
-    /*https://miro.medium.com/v2/resize:fit:640/format:webp/1*ho6bMjASuvNi_YXJcmjF_w.png Heres all of them!
+    /*https://miro.medium.com/v2/resize:fit:640/format:webp/1*ho6bMjASuvNi_YXJcmjF_w.png Heres all of them! */
 }
-
 
 
 #Grid_Div{
