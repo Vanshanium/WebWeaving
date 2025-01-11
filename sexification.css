@@ -57,6 +57,12 @@ p{
     /* This is called the element selector, it selects all tag of the name */
     
 }
+ 
+p::selection{
+    color: #8D0B41;
+    background-color: #D6CFB4;
+    
+}
 
 
 #gibrish{
@@ -149,8 +155,8 @@ body{
     
     position: fixed;
     left: 0px;
-    height: 760px;
-    width: 100px;
+    height: 70vh;
+    width: 7vw;
     border-radius: 20px;
     background-color: #8D0B41;
     
@@ -162,4 +168,48 @@ body{
     gap:2px ;
 
 }
+
+#Social_Button:hover{
+
+    background-color: #175E4A;
+    /* THis is called the Pseudo Class which have the css when certain condition is achived!  */
+    /*https://miro.medium.com/v2/resize:fit:640/format:webp/1*ho6bMjASuvNi_YXJcmjF_w.png Heres all of them!
+}
+
+
+
+#Grid_Div{
+
+    /* Grid is simplely amazing, you can convert ur desgins to websites with grids! */
+    /* Learn it from here https://youtube.com/watch?v=EiNiSFIPIQE */
+    
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: repeat(6, 100px);
+    height: 600px;
+    width: 400px;
+    position: fixed;
+    top: 50px;
+    left: 200px;
+
+    background-color: #175E4A;
+    border-radius: 40px;
+
+}
+
+#Gird_Child_1{
+
+    background-color: white;
+    padding: 100px;
+    border-radius: 20px;
+
+    grid-area: 2 / 2 / 4 / 4;
+    /* grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4; */
+}
+
+
+
 /* Css Can be worked with some onther markup languages like xml we'll see after this */
