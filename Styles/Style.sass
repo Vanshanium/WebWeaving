@@ -1,13 +1,22 @@
 @use '_variables' as *
+    
 
-#Background_Plate
-
+#Blackground_Blur
+    
     position: absolute
-
     top: 0
     left: 0
     height: 100vh
     width: 100vw
+    filter: blur(4.5vw)
+    z-index: 0
+
+    @media (max-width: 768px) 
+        filter: blur(1vw)
+
+#Background_Plate
+
+
     background-color: $Global_White
 
     .Back_Vect // His is the class of all the vectors in the Back plate
@@ -25,4 +34,3 @@
         #Vect_Sub 
             stroke-width: 25px
             
-
