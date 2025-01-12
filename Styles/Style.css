@@ -1,32 +1,21 @@
 #Background_Plate {
   position: absolute;
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  grid-template-rows: repeat(4, auto);
   top: 0;
   left: 0;
   height: 100vh;
   width: 100vw;
-  background-color: #424242;
+  background-color: #FEF5EB;
+}
+#Background_Plate .Back_Vect {
+  width: 100vw;
+  height: 100vh;
   fill: none;
   stroke: #1880AD;
   stroke-linecap: round;
 }
-#Back_Vect_Main {
-  width: auto;
-}
-#Back_Vect_Main path {
+#Background_Plate .Back_Vect #Vect_Main {
   stroke-width: 50px;
 }
-
-#Back_Vect_Sub {
-  position: relative;
-  height: 25vh;
-  width: auto;
-  z-index: 1;
-  top: 0;
-  left: 0;
-}
-#Back_Vect_Sub path {
-  stroke-width: 50px;
+#Background_Plate .Back_Vect #Vect_Sub {
+  stroke-width: 25px;
 }/*# sourceMappingURL=Style.css.map */
