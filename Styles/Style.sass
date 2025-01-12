@@ -1,0 +1,45 @@
+@use '_variables' as *
+
+#Background_Plate
+
+    position: absolute
+    display: grid
+    grid-template-columns: repeat(5,auto)
+    grid-template-rows: repeat(4,auto)
+
+    top: 0
+    left: 0
+    height: 100vh
+    width: 100vw
+    background-color: $Global_White
+
+    .Back_Vect // His is the class of all the vectors in the Back plate
+
+    fill: none
+    stroke: $Educator_Low
+    stroke-linecap: round
+    
+
+#Back_Vect_Main
+
+    // height: 100vh
+    width: auto
+    
+    path
+        stroke-width: 50px
+
+
+#Back_Vect_Sub
+
+    position: relative
+
+    height: 25vh
+    width: auto
+    z-index: 1
+    top:0
+    left: 0
+    
+    path
+        stroke-width: 50px
+
+
