@@ -88,6 +88,9 @@ p::selection{
 body{
 
     background-image: url('./src/Background.png');
+    height: 100vh;
+    width: 100wh;
+
 
 }
 
@@ -148,6 +151,14 @@ body{
 }
 
 
+
+/* Here are some variables  */
+:root {
+
+    --blue-sex: #4999BC;
+}
+
+
 #Social_Panel{
 
     /* This is called a Flexbox with which u can have elements arranges with ease.. */
@@ -162,7 +173,7 @@ body{
     see this bible for units https://www.youtube.com/watch?v=fzZTvLmmTzM&t=659s */
 
     border-radius: 0.4rem;
-    background-color: #8D0B41;
+    background-color: var(--blue-sex);
     
     display: flex;
     flex-direction: column;
@@ -170,6 +181,7 @@ body{
     align-items: center;
     flex-wrap: nowrap;
     /* gap: 0.1em; ; */
+    z-index: 1;
 
 }
 
@@ -194,7 +206,8 @@ body{
 
 #Social_Button:hover{
 
-    background-color: #175E4A;
+    background-color: #ccb362;
+    border-radius: 1em;
     /* THis is called the Pseudo Class which have the css when certain condition is achived!  */
     /*https://miro.medium.com/v2/resize:fit:640/format:webp/1*ho6bMjASuvNi_YXJcmjF_w.png Heres all of them! */
 }
@@ -212,11 +225,11 @@ body{
     width: 400px;
     position: fixed;
     top: 50px;
-    left: 200px;
+    left: 100px;
 
-    background-color: #175E4A;
+    background-color: #368ae9;
     border-radius: 40px;
-
+    z-index: 1;
 }
 
 #Gird_Child_1{
@@ -231,6 +244,73 @@ body{
     grid-column-start: 3;
     grid-column-end: 4; */
 }
+
+#Gird_Child_1:active {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    transform: scale(0.8) rotate(15deg);
+    background-color: rgb(131, 199, 131);
+ }
+  
+#Gird_Child_2{
+
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+
+    grid-area: 2 / 4 / 2 / 5 ;
+
+}
+
+@keyframes tatti_animation{
+    
+/* You can make your custom animation using transformations but the real shit is 3js lets go soab */
+    25% {
+      transform: rotate(45deg);
+      opacity: 0.5;
+      transform: scale(0.5) ;
+    }
+    50% {
+      transform: rotate(-30deg);
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(360deg);
+      opacity: 1;
+    }
+}
+
+  #Gird_Child_2:active {
+    animation: tatti_animation 4s;
+    background-color: rgb(131, 199, 131);
+ }
+
+
+
+#Gird_Child_3{
+
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+
+    grid-area: 3 / 4 / 4 / 5 ;
+
+}
+
+#blur{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+
+    background: rgba(255, 247, 247, 0.5);
+    backdrop-filter: blur(20px);
+    /* z-index: 0; */
+}
+
+/* I will learn animations from the Projects lets not waste time 
+https://www.w3schools.com/css/css3_2dtransforms.asp here is the Tranformations  */
 
 
 
