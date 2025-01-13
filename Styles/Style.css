@@ -7,7 +7,7 @@
   filter: blur(4.5vw);
   z-index: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   #Blackground_Blur {
     filter: blur(8vw);
   }
@@ -31,21 +31,27 @@
 
 #Socials_Panel {
   position: fixed;
+  display: flex;
+  align-items: center;
+  align-content: center;
   left: 0;
   top: 10vh;
   width: 5vw;
   height: 70vh;
-  fill: #1880AD;
-}
-@media (max-width: 1000px) {
-  #Socials_Panel {
-    width: 8vw;
-    height: 60vh;
-  }
+  --start-color: #1880AD;
+  --end-color: #105370;
 }
 @media (max-width: 700px) {
   #Socials_Panel {
-    width: 8vw;
+    width: 9vw;
     height: 50vh;
   }
+}
+#Socials_Panel svg {
+  fill: url(#Element_Grad);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }/*# sourceMappingURL=Style.css.map */

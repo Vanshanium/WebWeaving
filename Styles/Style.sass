@@ -11,7 +11,7 @@
     filter: blur(4.5vw)
     z-index: 0
 
-    @media (max-width: 768px) 
+    @media (max-width: 700px) 
         filter: blur(8vw)
 
     
@@ -36,20 +36,33 @@
                 stroke-width: 25px
                 
 #Socials_Panel
+
+    //Alignment Properties 
     position: fixed
-    left:0
+    display: flex
+    align-items: center
+    align-content: center
+
+    // Panel Alignments 
+    left: 0
     top: 10vh
     width: 5vw
     height: 70vh
-
-    @media (max-width: 1000px)
-        width: 8vw
-        height: 60vh
-
     @media (max-width: 700px)
-        width: 8vw
+        width: 9vw
         height: 50vh
-    
-    fill: $Educator_Low 
 
-    // border: 4px solid #000000
+    
+    // This is when u try to assign Sass Variable to Css property
+    //Gradient of the Element can be defined anywhere
+    --start-color:  #{$Educator_Low} 
+    --end-color: #{$Educator_High}
+
+    svg
+        fill: url(#Element_Grad)
+        height: 100%
+        width: 100%  // They are relative to the Social_Panel
+        top: 0
+        left: 0
+        z-index: 0 
+    
