@@ -12,25 +12,44 @@
     z-index: 0
 
     @media (max-width: 768px) 
-        filter: blur(1vw)
+        filter: blur(8vw)
 
-#Background_Plate
-
-
-    background-color: $Global_White
-
-    .Back_Vect // His is the class of all the vectors in the Back plate
     
-        width: 100vw
-        height: 100vh
-        fill: none
+    #Background_Plate
 
-        stroke: $Educator_Low
-        stroke-linecap: round
 
-        #Vect_Main 
-            stroke-width: 50px
+        background-color: $Global_White
 
-        #Vect_Sub 
-            stroke-width: 25px
-            
+        .Back_Vect // His is the class of all the vectors in the Back plate
+        
+            width: 100vw
+            height: 100vh
+            fill: none
+
+            stroke: $Educator_Low
+            stroke-linecap: round
+
+            #Vect_Main 
+                stroke-width: 50px
+
+            #Vect_Sub 
+                stroke-width: 25px
+                
+#Socials_Panel
+    position: fixed
+    left:0
+    top: 10vh
+    width: 5vw
+    height: 70vh
+
+    @media (max-width: 1000px)
+        width: 8vw
+        height: 60vh
+
+    @media (max-width: 700px)
+        width: 8vw
+        height: 50vh
+    
+    fill: $Educator_Low 
+
+    // border: 4px solid #000000
