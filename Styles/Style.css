@@ -65,10 +65,15 @@
   flex-direction: column;
   align-items: center;
 }
+#Socials_Panel #Social_Icons a {
+  display: block;
+  height: 55%;
+  width: 55%;
+}
 #Socials_Panel #Social_Icons svg {
   position: relative;
   fill: #FEF5EB;
-  height: 55%;
-  width: 55%;
+  height: 100%;
+  width: 100%;
   z-index: 1;
 }/*# sourceMappingURL=Style.css.map */
