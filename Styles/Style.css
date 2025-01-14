@@ -35,7 +35,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: -30px;
   left: 0;
   top: 10vh;
   width: 5vw;
@@ -57,7 +57,15 @@
   z-index: 0;
   overflow: hidden;
 }
-#Socials_Panel .Social_Icons {
+#Socials_Panel #Social_Icons {
+  position: relative;
+  height: 85%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Socials_Panel #Social_Icons svg {
   position: relative;
   fill: #FEF5EB;
   height: 55%;
