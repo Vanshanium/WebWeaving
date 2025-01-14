@@ -8,7 +8,7 @@
     left: 0
     height: 100vh
     width: 100vw
-    filter: blur(4.5vw)
+    filter: blur(4.2vw)
     z-index: 0
 
     @media (max-width: 700px) 
@@ -38,17 +38,21 @@
 #Socials_Panel
 
     //Alignment Properties 
-    position: fixed
+    position: fixed 
     display: flex
+    flex-direction: column
     align-items: center
-    align-content: center
+    justify-content: center
+    gap: 6px
+
+    
 
     // Panel Alignments 
     left: 0
     top: 10vh
     width: 5vw
     height: 70vh
-    @media (max-width: 700px)
+    @media (max-width: 900px)
         width: 9vw
         height: 50vh
 
@@ -57,12 +61,20 @@
     //Gradient of the Element can be defined anywhere
     --start-color:  #{$Educator_Low} 
     --end-color: #{$Educator_High}
-
-    svg
+    
+    #Social_Main_Vect
+        position: absolute
         fill: url(#Element_Grad)
         height: 100%
         width: 100%  // They are relative to the Social_Panel
-        top: 0
-        left: 0
         z-index: 0 
+        overflow: hidden
+
+    .Social_Icons
+        position: relative
+        fill: $Global_White
+        height: 55%
+        width: 55%
+        z-index: 1
+        
     

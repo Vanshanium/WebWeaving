@@ -4,7 +4,7 @@
   left: 0;
   height: 100vh;
   width: 100vw;
-  filter: blur(4.5vw);
+  filter: blur(4.2vw);
   z-index: 0;
 }
 @media (max-width: 700px) {
@@ -32,8 +32,10 @@
 #Socials_Panel {
   position: fixed;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  align-content: center;
+  justify-content: center;
+  gap: 6px;
   left: 0;
   top: 10vh;
   width: 5vw;
@@ -41,17 +43,24 @@
   --start-color: #1880AD;
   --end-color: #105370;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   #Socials_Panel {
     width: 9vw;
     height: 50vh;
   }
 }
-#Socials_Panel svg {
+#Socials_Panel #Social_Main_Vect {
+  position: absolute;
   fill: url(#Element_Grad);
   height: 100%;
   width: 100%;
-  top: 0;
-  left: 0;
   z-index: 0;
+  overflow: hidden;
+}
+#Socials_Panel .Social_Icons {
+  position: relative;
+  fill: #FEF5EB;
+  height: 55%;
+  width: 55%;
+  z-index: 1;
 }/*# sourceMappingURL=Style.css.map */
