@@ -33,9 +33,7 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: -30px;
   left: 0;
   top: 10vh;
   width: 5vw;
@@ -55,7 +53,6 @@
   height: 100%;
   width: 100%;
   z-index: 0;
-  overflow: hidden;
 }
 #Socials_Panel #Social_Icons {
   position: relative;
@@ -71,9 +68,26 @@
   width: 55%;
 }
 #Socials_Panel #Social_Icons svg {
-  position: relative;
   fill: #FEF5EB;
   height: 100%;
   width: 100%;
-  z-index: 1;
+}
+
+#Navigation_Panel {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  top: -10px;
+  left: 15vw;
+  height: 6.5vh;
+  width: 52vw;
+}
+#Navigation_Panel svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  fill: none;
+  stroke: #262529;
+  stroke-width: 1vh;
 }/*# sourceMappingURL=Style.css.map */

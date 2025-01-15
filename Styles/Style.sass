@@ -41,9 +41,7 @@
     position: fixed 
     display: flex
     flex-direction: column
-    align-items: center
     justify-content: center
-    gap: -30px
 
     
 
@@ -69,9 +67,6 @@
         height: 100%
         width: 100%  // They are relative to the Social_Panel
         z-index: 0 
-        overflow: hidden
-
-
 
     #Social_Icons
 
@@ -83,19 +78,38 @@
         flex-direction: column
         align-items: center
 
-        a
+        a // The anchor takes 55% of the div 
             display: block
             height: 55%
             width: 55%
 
-            // border: 4px solid black
-
-        svg
-            position: relative
+        svg //And the svg takes the 100% of the anchors
             fill: $Global_White
             height: 100%
             width:  100%
-            z-index: 1
             
             
-    
+#Navigation_Panel
+
+    position: relative
+
+    display: flex
+    align-content: center
+    justify-content: center
+
+    top: -10px
+    left: 15vw
+
+    height: 6.5vh 
+    width:  52vw
+
+    svg
+        
+        position: absolute
+        height: 100%
+        width: 100%
+
+        fill: none
+        stroke: $Global_Black
+        stroke-width: 1vh
+        
