@@ -7,9 +7,9 @@
   filter: blur(4.2vw);
   z-index: 0;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   #Blackground_Blur {
-    filter: blur(8vw);
+    filter: blur(12vw);
   }
 }
 #Blackground_Blur #Background_Plate {
@@ -90,4 +90,27 @@
   fill: none;
   stroke: #262529;
   stroke-width: 1vh;
+}
+#Navigation_Panel ul {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 90%;
+  width: 90%;
+  border: 4px solid #262529;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 4vw;
+  font-size: calc(0.5rem + 0.5vw);
+}
+#Navigation_Panel li {
+  border: 4px solid red;
+  padding: 10px;
+  font-size: inherit;
+}
+#Navigation_Panel a {
+  text-decoration: none;
+  white-space: nowrap;
 }/*# sourceMappingURL=Style.css.map */
