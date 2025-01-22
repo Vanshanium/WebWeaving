@@ -1,5 +1,6 @@
 body {
   font-family: "Afacad", "Jost", "Poppins", sans-serif;
+  overflow: hidden;
 }
 
 #Blackground_Blur {
@@ -41,6 +42,7 @@ body {
   left: 0;
   top: 10vh;
   width: 5vw;
+  min-width: 70px;
   height: 70vh;
   --start-color: #1880AD;
   --end-color: #105370;
@@ -112,4 +114,18 @@ nav a {
   text-decoration: none;
   font-weight: 600;
   color: #262529;
+}
+
+#Identity_Panel {
+  display: flex;
+  position: absolute;
+  border: 4px solid #262529;
+  top: 0px;
+  right: 0px;
+  height: 100vh;
+  width: 50vw;
+}
+#Identity_Panel svg {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=Style.css.map */
