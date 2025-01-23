@@ -136,7 +136,7 @@ nav a {
   fill: url(#Element_Grad);
   z-index: 0;
 }
-#Identity_Panel img {
+#Identity_Panel #Mock_Up {
   position: absolute;
   right: 12vw;
   bottom: 0px;
@@ -145,9 +145,25 @@ nav a {
   height: 85vh;
 }
 @media (max-width: 900px) {
-  #Identity_Panel img {
+  #Identity_Panel #Mock_Up {
     right: 20vw;
     width: 65vw;
     height: 55vh;
   }
+}
+#Identity_Panel a {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  top: 300px;
+  background-color: #FEF5EB;
+  height: 5vw;
+  width: auto;
+  border-radius: 1.5vw;
+}
+#Identity_Panel a img {
+  margin: 10%;
+  filter: invert(39%) sepia(13%) saturate(2934%) hue-rotate(216deg) brightness(100%) contrast(89%);
 }/*# sourceMappingURL=Style.css.map */
