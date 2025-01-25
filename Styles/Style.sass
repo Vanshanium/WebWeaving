@@ -153,6 +153,7 @@ nav
     @media (max-width: 900px)
         width: 90vw
 
+
     svg
         
         position: absolute
@@ -179,22 +180,39 @@ nav
             width: 65vw
             height: 55vh
 
-    a 
+    a // This is the buttons
         
         display: flex
         align-content: center
         justify-content: center
         position: absolute
-        right: 10px
-        top: 300px
-
         background-color: $Global_White
-        height: 5vw
-        width: auto
 
+        top: 300px
+        right: 100px
+
+        height: 4.8vw
+        width: auto
         border-radius: 1.5vw 
-        
+        z-index: 2
+
         img
             margin: 10%
+        
+    #Dev_Button
+
+        img
             filter: invert(39%) sepia(13%) saturate(2934%) hue-rotate(216deg) brightness(100%) contrast(89%)
             // https://codepen.io/sosuke/pen/Pjoqqp //
+
+        &::before
+            content: ""
+            position: absolute
+            
+            height: 105%
+            width: 105%
+            border-radius: 1.5vw 
+
+            filter: blur(10px)
+            background-color: $Global_Black
+            z-index: 0
