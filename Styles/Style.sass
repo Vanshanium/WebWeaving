@@ -24,6 +24,7 @@ body
 
 
         background-color: $Global_White
+        z-index: -1
 
         .Back_Vect // His is the class of all the vectors in the Back plate
         
@@ -71,13 +72,14 @@ body
         fill: url(#Element_Grad)
         height: 100%
         width: 100%  // They are relative to the Social_Panel
-        z-index: 0 
+        z-index: 1 
 
     #Social_Icons
 
         position: relative
         height: 85%
         width: auto
+        z-index: 2
 
         display: flex
         flex-direction: column
@@ -149,6 +151,8 @@ nav
 
     height: 100vh
     width: 53vw
+
+    z-index: 1
     
     @media (max-width: 900px)
         width: 90vw
@@ -160,8 +164,6 @@ nav
         width: 100%
         height: 100%
         fill: url(#Element_Grad)
-        z-index: 0
-
 
     #Mock_Up 
 
@@ -169,8 +171,6 @@ nav
         right: 12vw
         bottom: 0px
     
-        z-index: 1
-
         width: 37vw
         height: 85vh
 
@@ -186,33 +186,58 @@ nav
         align-content: center
         justify-content: center
         position: absolute
-        background-color: $Global_White
+
+        cursor: pointer
 
         top: 300px
         right: 100px
 
         height: 4.8vw
         width: auto
+
         border-radius: 1.5vw 
-        z-index: 2
 
         img
             margin: 10%
+            z-index: 2
         
     #Dev_Button
 
         img
             filter: invert(39%) sepia(13%) saturate(2934%) hue-rotate(216deg) brightness(100%) contrast(89%)
-            // https://codepen.io/sosuke/pen/Pjoqqp //
 
         &::before
-            content: ""
             position: absolute
-            
-            height: 105%
-            width: 105%
-            border-radius: 1.5vw 
+            content: ""
+            height: 100%
+            width: 100% 
 
-            filter: blur(10px)
-            background-color: $Global_Black
-            z-index: 0
+            border-radius: inherit 
+
+            background-color: $Global_White
+            z-index: 2
+
+        &::after
+
+            position: absolute
+            content: ""
+            
+            height: 100%
+            width: 100%
+
+            // top: 50%
+            // left: 50%
+            // transform: translate(-50%,-50%)
+
+
+            opacity: 0
+            border-radius: inherit 
+            background-color: $Developer_Sub
+            filter: blur(0.4vw)
+            z-index: 1
+            transition: opacity 0.2s ease-in-out
+            // Put a animation in this!!!
+
+        &:hover::after
+            opacity: 1
+            
