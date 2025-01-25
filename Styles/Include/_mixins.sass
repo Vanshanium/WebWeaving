@@ -1,0 +1,38 @@
+//Flex Mixins
+
+@mixin flex_center
+    display: flex
+    align-content: center
+    justify-content: center
+
+@mixin Elementary_Hover($Color_before,$Color_after)
+    
+    &::before
+        position: absolute
+        content: ""
+        height: 100%
+        width: 100% 
+
+        border-radius: inherit 
+
+        background-color: $Color_before
+        z-index: 2
+
+    &::after
+
+        position: absolute
+        content: ""
+        
+        height: 100%
+        width: 100%
+
+        opacity: 0
+        border-radius: inherit 
+        background-color: $Color_after
+        filter: blur(0.4vw)
+        z-index: 1
+        transition: opacity 0.2s ease-in-out
+        // Put a animation in this!!!
+
+    &:hover::after
+        opacity: 1

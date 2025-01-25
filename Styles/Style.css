@@ -38,8 +38,9 @@ body {
 #Socials_Panel {
   position: fixed;
   display: flex;
-  flex-direction: column;
+  align-content: center;
   justify-content: center;
+  flex-direction: column;
   left: 0;
   top: 10vh;
   width: 5vw;
@@ -102,8 +103,8 @@ nav svg {
 nav ul {
   display: flex;
   align-content: center;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: space-evenly;
   gap: 4vw;
   list-style: none;
   margin: 0;
@@ -158,8 +159,6 @@ nav a {
   justify-content: center;
   position: absolute;
   cursor: pointer;
-  top: 300px;
-  right: 100px;
   height: 4.8vw;
   width: auto;
   border-radius: 1.5vw;
@@ -168,8 +167,40 @@ nav a {
   margin: 10%;
   z-index: 2;
 }
-#Identity_Panel #Dev_Button img {
-  filter: invert(39%) sepia(13%) saturate(2934%) hue-rotate(216deg) brightness(100%) contrast(89%);
+#Identity_Panel #Edu_Button {
+  top: 400px;
+  right: 100px;
+}
+#Identity_Panel #Edu_Button::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  background-color: #FEF5EB;
+  z-index: 2;
+}
+#Identity_Panel #Edu_Button::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  border-radius: inherit;
+  background-color: #4999BC;
+  filter: blur(0.4vw);
+  z-index: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+#Identity_Panel #Edu_Button:hover::after {
+  opacity: 1;
+}
+#Identity_Panel #Edu_Button img {
+  filter: invert(78%) sepia(11%) saturate(6014%) hue-rotate(168deg) brightness(77%) contrast(88%);
+}
+#Identity_Panel #Dev_Button {
+  top: 300px;
+  right: 100px;
 }
 #Identity_Panel #Dev_Button::before {
   position: absolute;
@@ -194,4 +225,100 @@ nav a {
 }
 #Identity_Panel #Dev_Button:hover::after {
   opacity: 1;
+}
+#Identity_Panel #Dev_Button img {
+  filter: invert(39%) sepia(13%) saturate(2934%) hue-rotate(216deg) brightness(100%) contrast(89%);
+}
+#Identity_Panel #Des_Button {
+  top: 200px;
+  right: 100px;
+}
+#Identity_Panel #Des_Button::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  background-color: #FEF5EB;
+  z-index: 2;
+}
+#Identity_Panel #Des_Button::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  border-radius: inherit;
+  background-color: #EA6262;
+  filter: blur(0.4vw);
+  z-index: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+#Identity_Panel #Des_Button:hover::after {
+  opacity: 1;
+}
+#Identity_Panel #Des_Button img {
+  filter: invert(56%) sepia(62%) saturate(2505%) hue-rotate(322deg) brightness(95%) contrast(92%);
+}
+#Identity_Panel #Story_Button {
+  top: 100px;
+  right: 100px;
+}
+#Identity_Panel #Story_Button::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  background-color: #FEF5EB;
+  z-index: 2;
+}
+#Identity_Panel #Story_Button::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  border-radius: inherit;
+  background-color: #5EBFA3;
+  filter: blur(0.4vw);
+  z-index: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+#Identity_Panel #Story_Button:hover::after {
+  opacity: 1;
+}
+#Identity_Panel #Story_Button img {
+  filter: invert(74%) sepia(18%) saturate(938%) hue-rotate(112deg) brightness(90%) contrast(83%);
+}
+#Identity_Panel #Art_Button {
+  top: 0px;
+  right: 100px;
+}
+#Identity_Panel #Art_Button::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  background-color: #FEF5EB;
+  z-index: 2;
+}
+#Identity_Panel #Art_Button::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  border-radius: inherit;
+  background-color: #FEB566;
+  filter: blur(0.4vw);
+  z-index: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+#Identity_Panel #Art_Button:hover::after {
+  opacity: 1;
+}
+#Identity_Panel #Art_Button img {
+  filter: invert(72%) sepia(57%) saturate(479%) hue-rotate(335deg) brightness(100%) contrast(101%);
 }/*# sourceMappingURL=Style.css.map */

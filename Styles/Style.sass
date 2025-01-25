@@ -1,4 +1,5 @@
-@use '_variables' as *
+@use './Include/_variables' as *
+@use './Include/_mixins' as *
     
 
 body
@@ -45,9 +46,9 @@ body
 
     //Alignment Properties 
     position: fixed 
-    display: flex
+    @include flex_center
+    
     flex-direction: column
-    justify-content: center
     
     // Panel Alignments 
     left: 0
@@ -122,8 +123,8 @@ nav
         
         display: flex 
         align-content: center
-        justify-content: space-evenly
         align-items: center
+        justify-content: space-evenly
         gap: 4vw
         // Make it Responsive
         
@@ -182,15 +183,11 @@ nav
 
     a // This is the buttons
         
-        display: flex
-        align-content: center
-        justify-content: center
+        @include flex_center
+        
         position: absolute
-
         cursor: pointer
 
-        top: 300px
-        right: 100px
 
         height: 4.8vw
         width: auto
@@ -200,44 +197,54 @@ nav
         img
             margin: 10%
             z-index: 2
-        
+            // https://codepen.io/sosuke/pen/Pjoqqp The Filter
+
+    #Edu_Button
+
+        top: 400px
+        right: 100px
+
+        @include Elementary_Hover($Global_White,$Educator_Sub)
+     
+        img
+            filter: invert(78%) sepia(11%) saturate(6014%) hue-rotate(168deg) brightness(77%) contrast(88%)
+    
     #Dev_Button
 
+        top: 300px
+        right: 100px
+
+        @include Elementary_Hover($Global_White,$Developer_Sub)
+     
         img
             filter: invert(39%) sepia(13%) saturate(2934%) hue-rotate(216deg) brightness(100%) contrast(89%)
 
-        &::before
-            position: absolute
-            content: ""
-            height: 100%
-            width: 100% 
+    #Des_Button
 
-            border-radius: inherit 
+        top: 200px
+        right: 100px
 
-            background-color: $Global_White
-            z-index: 2
+        @include Elementary_Hover($Global_White,$Designer_Sub)
+     
+        img
+            filter: invert(56%) sepia(62%) saturate(2505%) hue-rotate(322deg) brightness(95%) contrast(92%)
 
-        &::after
+    #Story_Button
+        
+        top: 100px
+        right: 100px
 
-            position: absolute
-            content: ""
-            
-            height: 100%
-            width: 100%
+        @include Elementary_Hover($Global_White,$Story_Teller_Sub)
+     
+        img
+            filter: invert(74%) sepia(18%) saturate(938%) hue-rotate(112deg) brightness(90%) contrast(83%)
 
-            // top: 50%
-            // left: 50%
-            // transform: translate(-50%,-50%)
+    #Art_Button
+        
+        top: 0px
+        right: 100px
 
-
-            opacity: 0
-            border-radius: inherit 
-            background-color: $Developer_Sub
-            filter: blur(0.4vw)
-            z-index: 1
-            transition: opacity 0.2s ease-in-out
-            // Put a animation in this!!!
-
-        &:hover::after
-            opacity: 1
-            
+        @include Elementary_Hover($Global_White,$Artist_Sub)
+     
+        img
+            filter: invert(72%) sepia(57%) saturate(479%) hue-rotate(335deg) brightness(100%) contrast(101%)
