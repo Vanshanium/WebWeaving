@@ -161,7 +161,7 @@ nav a {
   cursor: pointer;
   height: 4.8vw;
   width: auto;
-  border-radius: 1.5vw;
+  border-radius: 1.4vw;
 }
 #Identity_Panel a img {
   margin: 10%;
@@ -170,6 +170,7 @@ nav a {
 #Identity_Panel #Edu_Button {
   top: 400px;
   right: 100px;
+  opacity: 0;
 }
 #Identity_Panel #Edu_Button::before {
   position: absolute;
@@ -199,8 +200,8 @@ nav a {
   filter: invert(78%) sepia(11%) saturate(6014%) hue-rotate(168deg) brightness(77%) contrast(88%);
 }
 #Identity_Panel #Dev_Button {
-  top: 300px;
-  right: 100px;
+  top: 35vh;
+  right: 13vw;
 }
 #Identity_Panel #Dev_Button::before {
   position: absolute;
@@ -230,8 +231,8 @@ nav a {
   filter: invert(39%) sepia(13%) saturate(2934%) hue-rotate(216deg) brightness(100%) contrast(89%);
 }
 #Identity_Panel #Des_Button {
-  top: 200px;
-  right: 100px;
+  top: 45vh;
+  right: 8vw;
 }
 #Identity_Panel #Des_Button::before {
   position: absolute;
@@ -261,8 +262,8 @@ nav a {
   filter: invert(56%) sepia(62%) saturate(2505%) hue-rotate(322deg) brightness(95%) contrast(92%);
 }
 #Identity_Panel #Story_Button {
-  top: 100px;
-  right: 100px;
+  top: 57vh;
+  right: 5vw;
 }
 #Identity_Panel #Story_Button::before {
   position: absolute;
@@ -292,8 +293,8 @@ nav a {
   filter: invert(74%) sepia(18%) saturate(938%) hue-rotate(112deg) brightness(90%) contrast(83%);
 }
 #Identity_Panel #Art_Button {
-  top: 0px;
-  right: 100px;
+  top: 70vh;
+  right: 4vw;
 }
 #Identity_Panel #Art_Button::before {
   position: absolute;
@@ -320,5 +321,5 @@ nav a {
   opacity: 1;
 }
 #Identity_Panel #Art_Button img {
-  filter: invert(72%) sepia(57%) saturate(479%) hue-rotate(335deg) brightness(100%) contrast(101%);
+  filter: invert(77%) sepia(38%) saturate(589%) hue-rotate(340deg) brightness(103%) contrast(103%);
 }/*# sourceMappingURL=Style.css.map */

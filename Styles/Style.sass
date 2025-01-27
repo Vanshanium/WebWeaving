@@ -192,27 +192,28 @@ nav
         height: 4.8vw
         width: auto
 
-        border-radius: 1.5vw 
+        border-radius: 1.4vw 
 
         img
             margin: 10%
             z-index: 2
-            // https://codepen.io/sosuke/pen/Pjoqqp The Filter
+            // https://codepen.io/sosuke/pen/Pjoqqp The Filter works better in black.
 
     #Edu_Button
 
         top: 400px
         right: 100px
+        opacity: 0
 
         @include Elementary_Hover($Global_White,$Educator_Sub)
-     
+
         img
             filter: invert(78%) sepia(11%) saturate(6014%) hue-rotate(168deg) brightness(77%) contrast(88%)
     
     #Dev_Button
 
-        top: 300px
-        right: 100px
+        top: 35vh
+        right: 13vw
 
         @include Elementary_Hover($Global_White,$Developer_Sub)
      
@@ -221,8 +222,8 @@ nav
 
     #Des_Button
 
-        top: 200px
-        right: 100px
+        top: 45vh
+        right: 8vw
 
         @include Elementary_Hover($Global_White,$Designer_Sub)
      
@@ -231,8 +232,8 @@ nav
 
     #Story_Button
         
-        top: 100px
-        right: 100px
+        top: 57vh
+        right: 5vw
 
         @include Elementary_Hover($Global_White,$Story_Teller_Sub)
      
@@ -241,10 +242,11 @@ nav
 
     #Art_Button
         
-        top: 0px
-        right: 100px
+        top: 70vh
+        right: 4vw
 
         @include Elementary_Hover($Global_White,$Artist_Sub)
      
         img
-            filter: invert(72%) sepia(57%) saturate(479%) hue-rotate(335deg) brightness(100%) contrast(101%)
+
+            filter: invert(77%) sepia(38%) saturate(589%) hue-rotate(340deg) brightness(103%) contrast(103%)
