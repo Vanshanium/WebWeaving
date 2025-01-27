@@ -1,10 +1,15 @@
 @use './Include/_variables' as *
 @use './Include/_mixins' as *
+
     
+$Main_High : $Educator_High
+$Main_Low : $Educator_Low
+
 
 body
     font-family: 'Afacad', 'Jost', 'Poppins', sans-serif 
     overflow: hidden
+
 
 
 #Blackground_Blur
@@ -33,7 +38,7 @@ body
             height: 100vh
             fill: none
 
-            stroke: $Educator_Low
+            stroke: $Main_Low
             stroke-linecap: round
 
             #Vect_Main 
@@ -64,8 +69,8 @@ body
 
     // This is when u try to assign Sass Variable to Css property
     //Gradient of the Element can be defined anywhere
-    --start-color:  #{$Educator_Low} 
-    --end-color: #{$Educator_High}
+    --start-color:  #{$Main_Low} 
+    --end-color: #{$Main_High}
     
     #Social_Main_Vect
         
@@ -87,7 +92,6 @@ body
         align-items: center
 
         a // The anchor takes 55% of the div 
-            display: block
             height: 55%
             width: 55%
 
@@ -184,7 +188,7 @@ nav
     a // This is the buttons
         
         @include flex_center
-        
+
         position: absolute
         cursor: pointer
 
@@ -250,3 +254,20 @@ nav
         img
 
             filter: invert(77%) sepia(38%) saturate(589%) hue-rotate(340deg) brightness(103%) contrast(103%)
+
+    #Hit
+
+        align-items: center
+        
+
+        top: 6vh
+        right: 3vw
+    
+        width: 11vw
+        height: 8vh
+        border-radius: 0.6vw
+        
+        background-color: $Educator_Sub
+
+        font-size: 1.7rem
+        font-weight: 700
