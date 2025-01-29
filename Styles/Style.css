@@ -352,41 +352,72 @@ nav a {
 
 #Introductions {
   position: absolute;
+  z-index: 2;
+}
+#Introductions h {
+  position: absolute;
+  top: 9vh;
+  left: 8vw;
+  width: 40vw;
+  font-size: 2vw;
+  font-weight: 600;
+  color: #1880AD;
 }
 #Introductions .Name {
   position: absolute;
-  height: 20vh;
-  width: 40vw;
-  background-color: #262529;
+  display: flex;
+  align-content: center;
+  justify-content: center;
   left: 8vw;
+  height: 25vh;
+  width: 40vw;
+}
+#Introductions .Name div {
+  font-family: "League Spartan", "sans-serif";
+  font-size: 27vh;
+  font-weight: 700;
+  color: #262529;
 }
 #Introductions #First_Name {
   top: 15vh;
 }
 #Introductions #Last_Name {
-  top: 36vh;
+  top: 35vh;
 }
 #Introductions #Details {
   position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0px;
   height: 30vh;
   width: 40vw;
   top: 60vh;
-  left: 5vw;
-  background-color: #262529;
+  left: 6vw;
 }
 #Introductions #Details a {
   display: flex;
   align-content: center;
   justify-content: center;
-  height: 4vh;
-  width: 4vw;
-  border-radius: 10px;
+  cursor: pointer;
+  height: 5vh;
+  width: 5vw;
+  border-radius: 1vw;
   background-color: #105370;
 }
 #Introductions #Details a img {
   height: inherit;
   filter: invert(100%) sepia(99%) saturate(1%) hue-rotate(16deg) brightness(103%) contrast(100%);
+}
+#Introductions #Details h1 {
+  transform: translateY(-10px);
+  margin: 0;
+  font-size: 4vw;
+  font-weight: 600;
+}
+#Introductions #Details p {
+  height: 20vh;
+  width: 40vw;
+  transform: translateY(-40px);
+  font-size: 1.4vw;
 }/*# sourceMappingURL=Style.css.map */
