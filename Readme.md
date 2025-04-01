@@ -1,5 +1,5 @@
-# WebWeaving 🌐
-
+ # WebWeaving <img src="./Logo.svg" width="7%" align="center">
+ 
 Welcome to **WebWeaving** – my personal portfolio website project! To Showcase my Developement and Designing Skills. This is an ongoing project where I am learning and implementing **Modern 3d & Gamified** Portfolio Project.
 
 <img src="./Frames.jpg" width="100%"> 
@@ -36,3 +36,5 @@ Let's **weave** the web together!
 ## Rough Plans - 
 
 <img src="./About_Page.jpg" width="100%"> 
+
+<p align="center"><img src="./Logo.svg" width="20%"></p>
