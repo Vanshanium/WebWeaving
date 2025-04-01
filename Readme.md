@@ -15,7 +15,7 @@ WebWeaving is a **responsive** portfolio website showcasing my skills, projects,
 **Module 1**
 
 - **HTML** – Structuring the content.
-- **CSS** – Styling the Webpage.
+- **SASS** – Styling the Webpage.
 - **JavaScript** – Adding interactivity & Responsiveness.
 
 **Module 2**
