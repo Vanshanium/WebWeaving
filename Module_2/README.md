@@ -1,4 +1,4 @@
-# JavaScript
+# React 
 
 ## Node.js ~ Python
 
