@@ -1,52 +1,12 @@
-# React 
+# React + Vite
 
-## Node.js ~ Python
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-- Node.js is a JavaScript runtime built on Chrome's V8 engine.
-- Enables running JavaScript on the server side.
-- Used for building scalable network applications.
-- Commonly used with frameworks like Express.js.
+Currently, two official plugins are available:
 
-## NPM (Node Package Manager) ~ PIP
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-- Default package manager for Node.js.
-- Used to install, share, and manage dependencies (libraries, tools).
-- Common commands:
-    - `npm init` – initialize a new project.
-    - `npm install <package>` – install a package.
-    - `npm run <script>` – run scripts defined in `package.json`.
+## Expanding the ESLint configuration
 
-## NVM (Node Version Manager) ~ UV
-
-- Tool for managing multiple Node.js versions on a single machine.
-- Useful for switching between Node.js versions for different projects.
-- Common commands:
-    - `nvm install <version>` – install a specific Node.js version.
-    - `nvm use <version>` – switch to a specific Node.js version.
-    - `nvm ls` – list installed Node.js versions.
-
-# Vite
-
-In Webdevelepment a user uses HTTP Request to get Html,Css or javascript.But it is insecure, to make it secure, Modern websites uses bundlers like vite to bundle the webapp and send a normal js or jsx with a html, which renders the webapp.
-
-Vite is a modern build tool and development server for front-end projects. It offers fast startup and hot module replacement during development, and bundles code efficiently for production.
-
-- **Fast Development:** Uses native ES modules for instant hot module replacement (HMR).
-- **Optimized Build:** Uses Rollup for efficient production builds.
-- **Zero Config:** Works out of the box, but is highly configurable.
-- **Framework Agnostic:** Supports React, Vue, Svelte, and more via plugins.
-
-1. **Install Vite:**
-    ```bash
-    # npm create : makes a packages.json file which is a file with all the dependencies which are need for the package. #
-    
-    npm create vite@latest 
-
-    npm install # Install the packages.
-
-    ```
-2. **Start the dev server:**
-    ```
-    npm run dev
-    ```
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
