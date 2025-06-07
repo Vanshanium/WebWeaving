@@ -1,10 +1,5 @@
-import expert from './penis.js'
-import readline from 'readline-sync';
+const meri_array = [1, 2, 3, 4, 5];
 
-// const name = readline.question('Enter your name: ');
+const doubles = meri_array.map(meri_array => meri_array * 3)
 
-// const penis_len = length(name)
-// remark_by_mia(penis_len)
-
-
-console.log("This is the expert :", expert)
+console.log(doubles); // This will log an array of undefined values because the arrow function does not return anything explicitly.

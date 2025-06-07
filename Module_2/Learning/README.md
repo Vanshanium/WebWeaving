@@ -138,15 +138,55 @@ Vite is a modern build tool and development server for front-end projects. It of
     console.log(mia);
 ```
 
+### Mapping 
+```javascript
+    const meri_array = [1, 2, 3, 4, 5];
+
+    const doubles = meri_array.map(meri_array => meri_array * 2)
+
+    const trip = meri_array.map((num) => {return num*3})
+
+```
+
+In react you can use it as - 
+```javascript
+const data = [
+    {
+        title: "John Wick",
+        year: 2014,
+        genre: "Action",
+    },
+    {
+        title: "The Matrix",
+        year: 1999,
+        genre: "Sci-Fi",
+    },
+];
+
+const card = data.map((item) => {
+
+    return (
+        <div className="card">
+            <h2>{item.title}</h2>
+            <p>Year: {item.year}</p>
+            <p>Genre: {item.genre}</p>
+        </div>
+    );
+}
+
+);
+
+export default card;
+```
+
 ## 4. Modules in Js 
 blah-blah-blah
-
 
 # React Project Structure: 
 
 ## Using CRA (Create React App)
 
-```
+```java
     my-cra-app/
     ├── node_modules/            
     ├── public/                  
@@ -177,7 +217,7 @@ blah-blah-blah
     └── README.md               # Docs 
 ```
 ## Using Vite 
-```
+```c
     my-vite-app/
     ├── node_modules/            
     ├── public/                  
@@ -205,4 +245,56 @@ blah-blah-blah
     ├── vite.config.js           
     ├── package-lock.json        
     └── README.md                
+```
+
+# Base Code - 
+
+## Using CRA (Without jsx):
+
+```javascript
+
+    import React from 'react';                  // Imports it as it is a Nodejs Library.
+    import ReactDOM from 'react-dom/client';    // Import React Dom 
+
+    const heading = React.createElement(        // This is a React Element. Which is just a Javascript Object.
+        'h1',
+        { className: 'main-heading' },
+        'Hello React Element!'
+    );
+
+    const root = ReactDOM.createRoot(document.getElementById('root')); // Creates a root for React to render into
+
+    root.render(heading);                        // Use the Root method render to render the component or element.                    
+
+    or 
+
+    import { StrictMode } from 'react'              
+    import { createRoot } from 'react-dom/client'   
+
+    createRoot(document.getElementById('root')).render(
+        <h1>Loading...</h1>
+    );
+
+```
+
+## React Element : 
+It is just a Javascript Object that represents a DOM node.
+```javascript
+
+    const element_Name = React.createElement(type,props,children);      // Without JSX
+
+    or
+
+    const element_name = <h1>Hello_World</h1>;                          //Using JSX
+
+
+    Both creates a Object like this: 
+    
+    const element_Name = {
+
+        type: 'h1',
+        props:{className: 'class'},
+        'Hello this a Message'
+    }
+
 ```
