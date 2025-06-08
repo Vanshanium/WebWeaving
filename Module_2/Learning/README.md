@@ -150,33 +150,21 @@ Vite is a modern build tool and development server for front-end projects. It of
 
 In react you can use it as - 
 ```javascript
-const data = [
-    {
-        title: "John Wick",
-        year: 2014,
-        genre: "Action",
-    },
-    {
-        title: "The Matrix",
-        year: 1999,
-        genre: "Sci-Fi",
-    },
-];
 
-const card = data.map((item) => {
+    const Cardcomponent = () => {
+        return (
+            data.map((item) => {
+                return (
+                    <div className="card">
+                        <h2>{item.title}</h2>
+                        <p>Year: {item.year}</p>
+                        <p>Genre: {item.genre}</p>
+                    </div>
+                );
+            })
+        );
+    };
 
-    return (
-        <div className="card">
-            <h2>{item.title}</h2>
-            <p>Year: {item.year}</p>
-            <p>Genre: {item.genre}</p>
-        </div>
-    );
-}
-
-);
-
-export default card;
 ```
 
 ## 4. Modules in Js 
@@ -246,6 +234,24 @@ blah-blah-blah
     ├── package-lock.json        
     └── README.md                
 ```
+# Rendering Process : 
+
+🤯 Initial Render:
+    
+    1.When your app loads:
+    2.ReactDOM creates a React Root (via createRoot())
+    3.Calls the .render() method with your top-level component (often <App />)
+    4.React creates a Virtual DOM tree
+    5.ReactDOM renders it to the real DOM
+
+✅ Subsequent Renders (on state/props change):
+    
+    1.State/props in a component changes
+    2.React re-renders that component and its children
+    3.New Virtual DOM is generated for those parts
+    4.React performs a diffing operation
+    5.Only the actual changes are applied to the real DOM
+
 
 # Base Code - 
 
@@ -298,3 +304,75 @@ It is just a Javascript Object that represents a DOM node.
     }
 
 ```
+
+# React Components :
+A React component is a reusable, self-contained function or class that returns React elements describing what should appear on the screen. Components can accept inputs called "props" and manage their own state. They help break the UI into independent, manageable pieces, making code more modular and maintainable.
+
+```javascript
+
+    function Welcome(props) {                   // The name should Start with Capital Letter.
+        return <h1>Hello, {props.name}!</h1>;
+    }
+
+    <Welcome />                                 // call this function like 
+
+```
+
+# States and Props
+
+## Props - 
+props are the Properties that can be passed to the elements or components like functional arguments.or they are just object that is passed to the React Components.
+
+```javascript
+
+    const component = (prop) => {
+        return (
+            <tag> This is {prop.properties}</tag>
+        );
+    }
+
+    let username = prompt("Enter your name: ");
+
+    const Nameplate = ({ input_name }) => {             // Directly pass the arguments without objects.
+
+        return (
+            <h1>Hellow {input_name}</h1>
+        );
+    }
+
+```
+
+## States - 
+States are special variables in React components that allow you to store and manage dynamic data. Unlike props, which are read-only and passed from parent to child, state is local to a component and can be updated using the `useState` hook (in functional components). When state changes, React automatically re-renders the component to reflect the new data.
+
+Example:
+```javascript
+    const Tapper = () => {
+
+        const [cunt, Up_cunt] = useState(0);
+
+        /*
+        const [var, callback_function] = usestate() [Hook] 
+        */
+
+        const inc_bitch = (input_value) => Up_cunt(cunt + 1);
+
+        /*
+        Custom funciton with callback.
+        */
+
+        return (
+            <>
+
+                <p>This is no. of cunt I have : {cunt}</p>
+                <button onClick={inc_bitch}></button>
+
+            </>
+        );
+
+    }
+```
+- Use state to track values that change over time (like user input, toggles, counters, etc.).
+- Updating state triggers a re-render, so the UI stays in sync with your data.
+- State is isolated to each component unless you lift it up or use context for sharing.
+
